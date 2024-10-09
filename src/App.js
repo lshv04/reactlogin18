@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter  as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './firebase/AuthProvider'; // Ajuste o caminho
 import Navbar from './components/Navbar'; // Importando a Navbar
 import LoginPage from './pages/Login'; // Importando a página Login
