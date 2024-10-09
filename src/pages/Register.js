@@ -5,7 +5,7 @@ import Register from '../components/Register'; // Importando o componente Regist
 function RegisterPage() {
   return (
     <div>
-      <Register /> {/* Usando o componente Register */}
+      <Register/> {/* Usando o componente Register */}
     </div>
   );
 }

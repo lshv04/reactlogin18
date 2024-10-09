@@ -1,12 +1,16 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const Teste2 = () => {
   return (
     <div>
-    <h1>This is page teste2</h1>
+         <Container className="mt-5">
+      <h2>Pagina teste 2</h2>
+ 
+    </Container>
 
 
-</div>
+    </div>
   )
 }
 

@@ -4,6 +4,8 @@ import { auth } from '../firebase/firebaseConfig';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../firebase/AuthProvider'; // Importando o contexto de autenticação
+import "./Register.css";
+
 
 
 // Função para traduzir erros para mensagens amigáveis
@@ -27,6 +29,7 @@ function Register() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  
   const navigate = useNavigate();
   const { currentUser } = useAuth(); // Obtendo o usuário autenticado
 
@@ -58,8 +61,10 @@ function Register() {
 
 
   return (
-    <Container className="mt-5">
-      <h2>Register</h2>
+    <Container className="mt-3">
+      <div className='row d-flex justify-content-center '>
+      <div className="col-12 col-md-6 col-lg-4  p-5 logincont">
+      <h2 className='text-center'>Register</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <Form onSubmit={handleRegister}>
         <Form.Group controlId="registerFormName">
@@ -70,6 +75,7 @@ function Register() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
+              className="no-outline"
           />
         </Form.Group>
 
@@ -82,6 +88,7 @@ function Register() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+              className="no-outline"
           />
         </Form.Group>
 
@@ -94,15 +101,19 @@ function Register() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+              className="no-outline"
           />
         </Form.Group>
 
 
-        <Button variant="primary" type="submit" className="mt-4" disabled={loading}>
+        <Button variant="primary" type="submit" className="mt-4 but" disabled={loading}>
           {loading ? <Spinner animation="border" size="sm" /> : 'Register'}
         </Button>
       </Form>
+      </div>
+      </div>
     </Container>
+
   );
 }
 

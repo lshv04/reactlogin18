@@ -1,48 +1,67 @@
 import React from 'react';
-import { Link} from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { useAuth } from '../firebase/AuthProvider'; // Para acessar o estado de autenticação
 import Dashboard from './Dashboard';
 
-
 function Navbar() {
-  const { currentUser} = useAuth(); // Obtendo o usuário autenticado e a função logout
-
-
-
+  const { currentUser } = useAuth(); // Obtendo o usuário autenticado
 
   return (
-    <nav className="navbar">
-      <ul className="nav-list">
+    <nav className="navbar d-flex justify-content-center">
+      <ul className="nav-list d-flex justify-content-center align-items-center gap-3">
         {/* Mostrar Login e Register apenas se o usuário NÃO estiver logado */}
         {!currentUser && (
           <>
             <li className="nav-item">
-              <Link to="/login" className="nav-link">Login</Link>
+              <NavLink 
+                to="/login"
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              >
+                Login
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/register" className="nav-link">Register</Link>
+              <NavLink 
+                to="/register"
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              >
+                Register
+              </NavLink>
             </li>
           </>
         )}
 
-
         {/* Sempre mostrar o link para Home */}
         <li className="nav-item">
-          <Link to="/home" className="nav-link">Home</Link>
+          <NavLink 
+            to="/home"
+            className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+          >
+            Home
+          </NavLink>
         </li>
-
 
         {/* Mostrar links Teste1 e Teste2 apenas se o usuário ESTIVER logado */}
         {currentUser && (
           <>
             <li className="nav-item">
-              <Link to="/teste1" className="nav-link">Teste 1</Link>
+              <NavLink 
+                to="/teste1"
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              >
+                Teste 1
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link to="/teste2" className="nav-link">Teste 2</Link>
+              <NavLink 
+                to="/teste2"
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+              >
+                Teste 2
+              </NavLink>
             </li>
+
             {/* Botão de logout */}
-         
             <li className="nav-item">
               <Dashboard/>
             </li>
@@ -53,7 +72,4 @@ function Navbar() {
   );
 }
 
-
 export default Navbar;
-
-

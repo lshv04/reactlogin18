@@ -1,0 +1,14 @@
+.nav-link.active {
+  
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: blue;
+    text-underline-offset: 4px;
+  }
+  li{
+    list-style: none;
+  }
+  .logout{
+    padding:4px 8px;
+
+  }

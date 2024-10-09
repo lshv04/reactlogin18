@@ -4,7 +4,7 @@ import { auth } from '../firebase/firebaseConfig';
 import { signInWithEmailAndPassword, setPersistence, browserLocalPersistence, browserSessionPersistence } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../firebase/AuthProvider'; // Importando o contexto de autenticação
-
+import "./Navbar.css";
 
 // Função para traduzir erros para mensagens amigáveis
 
@@ -65,9 +65,14 @@ function Login() {
 
 
   return (
-    <Container className="mt-5">
-      <h2>Login</h2>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
+    <Container className="mt-3 ">
+      
+     
+      <div className='row d-flex justify-content-center '>
+      
+        <div className="col-12 col-md-6 col-lg-4 p-5 logincont">
+        {error && <p style={{ color: 'red' }}>{error}</p>}
+        <h2 className='text-center mb-3'>Login</h2>
       <Form onSubmit={handleLogin}>
         <Form.Group controlId="loginFormEmail">
           <Form.Label>Email address</Form.Label>
@@ -77,6 +82,7 @@ function Login() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
+            className="no-outline"
           />
         </Form.Group>
 
@@ -89,6 +95,7 @@ function Login() {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             required
+            className="no-outline"
           />
         </Form.Group>
 
@@ -99,14 +106,18 @@ function Login() {
             label="Manter-me conectado"
             checked={rememberMe}
             onChange={(e) => setRememberMe(e.target.checked)}
+            className="checkbox"
           />
         </Form.Group>
 
 
-        <Button variant="primary" type="submit" className="mt-4" disabled={loading}>
+        <Button variant="primary" type="submit" className="mt-4 but" disabled={loading}>
           {loading ? <Spinner animation="border" size="sm" /> : 'Login'}
+          
         </Button>
       </Form>
+      </div>
+      </div>
     </Container>
   );
 }

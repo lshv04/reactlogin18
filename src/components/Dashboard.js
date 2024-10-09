@@ -20,12 +20,12 @@ function Dashboard() {
 
 
   return (
-    <Container className="mt-5">
-      <h2>Dashboard</h2>
+    <Container >
+   
       {currentUser ? (
         <div>
-          <p>Welcome, {currentUser.email}</p>
-          <Button onClick={handleLogout} variant="danger">
+        
+          <Button onClick={handleLogout} variant="danger" className='logout'>
             Logout
           </Button>
         </div>

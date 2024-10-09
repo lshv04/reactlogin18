@@ -4,7 +4,7 @@ import { useAuth } from '../firebase/AuthProvider'; // Para acessar o usuário a
 
 
 function Home() {
-  const { currentUser } = useAuth(); // Obter o usuário autenticado
+  const { currentUser} = useAuth(); // Obter o usuário autenticado
 
 
   return (

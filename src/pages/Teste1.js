@@ -1,9 +1,13 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
 
 const Teste1 = () => {
   return (
     <div>
-        <h1>This is page teste1</h1>
+         <Container className="mt-5">
+      <h2>Pagina teste 1</h2>
+ 
+    </Container>
 
 
     </div>
