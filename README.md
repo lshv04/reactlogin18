@@ -42,10 +42,13 @@ Ao entrar na página, o usuário não consegue acessar as páginas teste1 e test
   
 
   
-  ![Blue Futuristic Technology Presentation (30)](https://github.com/user-attachments/assets/6c048f39-eba6-43b2-ac67-e32aca88325f)  
 
 
   
+
+https://github.com/user-attachments/assets/32c99060-98ea-4a15-b564-9e348784e5a8
+
+
 
 
 
