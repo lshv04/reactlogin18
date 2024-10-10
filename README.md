@@ -1,70 +1,55 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+ ![Blue Futuristic Technology Presentation (30)](https://github.com/user-attachments/assets/35cb7de1-c70a-4485-a310-1750d3f2ac7d)
+# Projeto Pessoal - React/Firebase Login - 18
 
-In the project directory, you can run:
+Este projeto é um site de portfólio pessoal desenvolvido com o objetivo de criar um componente de Login e Registro simples, utilizando o Google Firebase para armazenar e autenticar usuários. O projeto possui uma escala menor do que os últimos, permitindo que eu pudesse focar exclusivamente no desenvolvimento dessa ferramenta.  
 
-### `npm start`
+**Características**  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Ao entrar na página, o usuário não consegue acessar as páginas teste1 e teste2. Após um login bem-sucedido, o usuário ganha acesso a essas páginas, mas perde o acesso aos componentes de login e registro.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📁 Acesso ao projeto  
 
-### `npm test`
+[Veja o projeto final do curso em funcionamento](https://lshv04.github.io/reactlogin18/).  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## ✔️ Técnicas e tecnologias utilizadas  
 
-### `npm run build`
+- **React Router**:  
+  Paginação feita de forma componentizada, a fim de evitar o carregamento ao mudar de página.  
+- **React Hooks**:  
+  Uso de hooks padrão do React e do React Router, como `useNavigate`, `useState` e `useEffect`.  
+- **Bootstrap Grid**:  
+  Grid desenvolvido com Bootstrap para melhor responsividade e organização.  
+- **Bootstrap Spinner**:  
+  Spinner criado para indicar o carregamento do login e registro.  
+- **Rotas protegidas**:  
+  Garantir que o usuário tenha acesso a determinados componentes da página apenas quando estiver logado.  
+- **Google Firebase**:  
+  Implementação de um backend leve utilizando Firebase para armazenar informações de registro e login, aproveitando hooks personalizados para gerenciar a autenticação de forma eficiente.
+  Desktop Log in
+  ![image](https://github.com/user-attachments/assets/03f83ca8-d802-4699-bdf9-e3a8f81993d8)  
+  Desktop Register  
+  ![image](https://github.com/user-attachments/assets/7306b2b5-9e69-4a12-b047-137440bd79e0)  
+  Desktop Logado  
+  ![image](https://github.com/user-attachments/assets/1ae46674-4e78-45b0-8290-722bfcfdf568)  
+  Mobile  
+  ![image](https://github.com/user-attachments/assets/4bccf85b-0b18-42c3-80c0-422edf265fea)  
+  ![image](https://github.com/user-attachments/assets/5a11d620-1ad4-483c-bd92-49d78500deb4)  
+  ![image](https://github.com/user-attachments/assets/80c39172-4b22-44c0-bd37-e1da3596a224)  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  
+  ![Blue Futuristic Technology Presentation (30)](https://github.com/user-attachments/assets/6c048f39-eba6-43b2-ac67-e32aca88325f)  
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+  
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+  
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Neste repositório, você tem acesso a todo o material produzido no projeto.
