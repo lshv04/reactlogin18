@@ -62,7 +62,7 @@ function Register() {
 
   return (
     <Container className="mt-3">
-      <div className='row d-flex justify-content-center '>
+      <div className='row d-flex justify-content-center p-3'>
       <div className="col-12 col-md-6 col-lg-4  p-5 logincont">
       <h2 className='text-center'>Register</h2>
       {error && <p style={{ color: 'red' }}>{error}</p>}
