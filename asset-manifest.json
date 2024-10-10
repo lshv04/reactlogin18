@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3d1a5b5e.css",
-    "main.js": "/static/js/main.6c153d7b.js",
-    "static/js/453.d05767b6.chunk.js": "/static/js/453.d05767b6.chunk.js",
-    "static/media/background.jpg": "/static/media/background.47c3330e68dd38dffe21.jpg",
-    "index.html": "/index.html",
-    "main.3d1a5b5e.css.map": "/static/css/main.3d1a5b5e.css.map",
-    "main.6c153d7b.js.map": "/static/js/main.6c153d7b.js.map",
-    "453.d05767b6.chunk.js.map": "/static/js/453.d05767b6.chunk.js.map"
+    "main.css": "/reactlogin18/static/css/main.3d21f1b6.css",
+    "main.js": "/reactlogin18/static/js/main.1ab0bcbf.js",
+    "static/js/453.d05767b6.chunk.js": "/reactlogin18/static/js/453.d05767b6.chunk.js",
+    "static/media/background.jpg": "/reactlogin18/static/media/background.47c3330e68dd38dffe21.jpg",
+    "index.html": "/reactlogin18/index.html",
+    "main.3d21f1b6.css.map": "/reactlogin18/static/css/main.3d21f1b6.css.map",
+    "main.1ab0bcbf.js.map": "/reactlogin18/static/js/main.1ab0bcbf.js.map",
+    "453.d05767b6.chunk.js.map": "/reactlogin18/static/js/453.d05767b6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d1a5b5e.css",
-    "static/js/main.6c153d7b.js"
+    "static/css/main.3d21f1b6.css",
+    "static/js/main.1ab0bcbf.js"
   ]
 }
